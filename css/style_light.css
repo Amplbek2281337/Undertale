@@ -237,8 +237,8 @@ body {
     height: 100%;
     background-size: 80px;
     background-repeat: no-repeat;
-    left: 15px;
-    bottom: -15px;
+    left: 20px;
+    bottom: -25px;
     position: absolute;
     z-index: 0;
 }
@@ -247,12 +247,13 @@ body {
     left: 130px;
     font-size: 18px;
     width: 550px;
+    top: 5px;
 }
 
 .text b, #text b {
     display: flex;
     position: absolute;
-    margin-left: -25px;
+    margin-left: -30px;
 }
 #new_stock{
     height: 0px;
@@ -417,9 +418,6 @@ body {
     color: black;
     position: absolute;
 }
-.send{
-    top: 300px;
-}
 
 #number{
     top: 125px;
@@ -446,6 +444,7 @@ body {
 
 .send {
     width: 530px;
+    top: 300px;
 }
 
 #ready {
@@ -482,7 +481,7 @@ body {
     display: none;
 }
 
-#ready:hover {
+#ready:hover, .send:hover {
     border-color: rgb(126, 42, 115);
     color: rgb(126, 42, 115);
     justify-content: center;
@@ -490,7 +489,7 @@ body {
     -webkit-text-stroke: 2px rgb(126, 42, 115);
 }
 
-#ready:active {
+#ready:active, .send:active {
     border-color: rgb(158, 99, 150);
     color: rgb(158, 99, 150);
     justify-content: center;
@@ -549,17 +548,6 @@ footer {
 .active {
     display: block;
 }
-.textbox #Casual_Flowey {
-    background-image: url('../image/INCasual_Flowey.png');
-    width: 100%;
-    height: 100%;
-    background-size: 100px;
-    background-repeat: no-repeat;
-    left: 15px;
-    bottom: -5px;
-    position: absolute;
-    z-index: 0;
-}
 
 .textbox #Nervous_Flowey {
     background-image: url('../image/INNervous_Flowey.png');
@@ -568,7 +556,7 @@ footer {
     background-size: 100px;
     background-repeat: no-repeat;
     left: 15px;
-    bottom: -10px;
+    bottom: -15px;
     position: absolute;
     z-index: 0;
 }
@@ -585,6 +573,30 @@ footer {
     z-index: 0;
 }
 
+.textbox #Cool_Flowey {
+    background-image: url('../image/INCool_Flowey.png');
+    width: 100%;
+    height: 100%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    left: 12px;
+    bottom: -20px;
+    position: absolute;
+    z-index: 0;
+}
+
+.textbox #Casual_Flowey {
+    background-image: url('../image/INCasual_Flowey.png');
+    width: 100%;
+    height: 100%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    left: 11px;
+    bottom: -10px;
+    position: absolute;
+    z-index: 0;
+}
+
 .textbox #Funny_Bones {
     background-image: url('../image/INFunny_Bones.png');
     width: 100%;
@@ -592,18 +604,7 @@ footer {
     background-size: 100px;
     background-repeat: no-repeat;
     left: 15px;
-    bottom: -5px;
-    position: absolute;
-    z-index: 0;
-}
-.textbox #Cool_Flowey {
-    background-image: url('../image/INCool_Flowey.png');
-    width: 100%;
-    height: 100%;
-    background-size: 100px;
-    background-repeat: no-repeat;
-    left: 15px;
-    bottom: -15px;
+    top: 15px;
     position: absolute;
     z-index: 0;
 }

@@ -211,9 +211,9 @@ body {
     background-image: url('../image/Happy_Flowey.png');
     width: 100%; /* Ширина элемента */
     height: 100%; /* Задайте высоту для видимости фона */
-    background-size: 75px; /* Масштабирует изображение по размеру элемента */
+    background-size: 80px; /* Масштабирует изображение по размеру элемента */
     top: 20px;
-    left: 30px;
+    left: 20px;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 0;
@@ -223,12 +223,13 @@ body {
     left: 140px;
     font-size: 18px;
     width: 550px;
+    top: 5px;
 }
 
 .text b, #text b {
     display: flex;
     position: absolute;
-    margin-left: -25px;
+    margin-left: -30px;
 }
 #new_stock{
     height: 0px;
@@ -370,6 +371,7 @@ body {
 
 .send{
     top: 300px;
+    width: 530px;
 }
 
 #number{
@@ -380,13 +382,10 @@ body {
     top: -50px;
 }
 
-
-#number, #email{
-    font-size: 20px;
-}
 #number, #email {
     width: 500px;
     padding: 15px;
+    font-size: 20px;
 }
 
 #number f:hover, #email f:hover {
@@ -396,10 +395,6 @@ body {
 
 #number f:active, #email f:active {
     display: none;
-}
-
-.send {
-    width: 530px;
 }
 
 #ready {
@@ -432,13 +427,13 @@ body {
     display: none;
 }
 
-#ready:hover {
+#ready:hover, .send:hover {
     border-color: rgb(255, 255, 64);
     color: rgb(255, 255, 64);
     user-select: none;
 }
 
-#ready:active {
+#ready:active, .send:active {
     border-color: rgb(201, 201, 0);
     color: rgb(201, 201, 0);
 }
@@ -483,7 +478,7 @@ footer {
 #textbox2 .text {
     left: 150px;
     top: 10px;
-    font-size: 18px;
+    font-size: 22px;
     width: 550px;
 }
 
@@ -494,7 +489,7 @@ footer {
     background-size: 100px;
     background-repeat: no-repeat;
     left: 15px;
-    bottom: -5px;
+    bottom: -15px;
     position: absolute;
     z-index: 0;
 }
@@ -517,8 +512,8 @@ footer {
     height: 100%;
     background-size: 100px;
     background-repeat: no-repeat;
-    left: 15px;
-    bottom: -5px;
+    left: 12px;
+    bottom: -20px;
     position: absolute;
     z-index: 0;
 }
@@ -529,8 +524,8 @@ footer {
     height: 100%;
     background-size: 100px;
     background-repeat: no-repeat;
-    left: 15px;
-    bottom: -5px;
+    left: 11px;
+    bottom: -10px;
     position: absolute;
     z-index: 0;
 }
@@ -542,7 +537,7 @@ footer {
     background-size: 100px;
     background-repeat: no-repeat;
     left: 15px;
-    bottom: -5px;
+    top: 15px;
     position: absolute;
     z-index: 0;
 }
