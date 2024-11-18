@@ -1,0 +1,662 @@
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(126,126,126);
+    height: 2200px;
+    width: 1889px;
+}
+
+#Logo {
+    display: flex;
+    justify-content: center;
+}
+
+#Logo img {
+    width: 600px;
+    height: auto;
+}
+
+.time {
+    width: 79px;
+    height: 79px; /* Задайте высоту для видимости фона */
+    background-image: url('../image/sun.png'); /* Убедитесь, что путь правильный */
+    position: absolute;
+    display: flex;
+    z-index: 7;
+    left: 1690px;
+    bottom: 765px;
+}
+
+#time:active {
+    display: none;
+}
+
+.backrounddark {
+    width: 1920px; /* Ширина элемента */
+    height: 449px; /* Задайте высоту для видимости фона */
+    background-image: url('../image/backroundlight.png'); /* Убедитесь, что путь правильный */
+    background-size: cover; /* Масштабирует изображение по размеру элемента */
+    background-position: center; /* Центрирует изображение */
+    position: absolute;
+    display: flex;
+    right: 0px;
+    z-index: 0;
+    bottom: 15px;
+}
+
+.backrounddark2 {
+    width: 1920px; /* Ширина элемента */
+    height: 449px; /* Задайте высоту для видимости фона */
+    background-image: url('../image/backroundlight.png'); /* Убедитесь, что путь правильный */
+    background-size: cover; /* Масштабирует изображение по размеру элемента */
+    background-position: center; /* Центрирует изображение */
+    opacity: 0.3; /* Прозрачность должна быть в формате от 0 до 1 */
+    position: absolute;
+    display: flex;
+    right: 0px;
+    z-index: 0;
+    top: 1445px;
+}
+
+#backrounddark3 {
+    width: 1900px; /* Ширина элемента */
+    height: 750px; /* Задайте высоту для видимости фона */
+    background-image: url('../image/end.png'); /* Убедитесь, что путь правильный */
+    background-size: cover; /* Масштабирует изображение по размеру элемента */
+    background-position: center; /* Центрирует изображение */
+    opacity: 0.3; /* Прозрачность должна быть в формате от 0 до 1 */
+    position: absolute;
+    display: flex;
+    right: 0px;
+    z-index: 0;
+    top: 2250px;
+    left: -3px;
+}
+
+#menu {
+    display: flex;
+    z-index: 3;
+}
+
+#menu .button, .box .button {
+    width: 310px;
+    height: 60px;
+    position: absolute;
+}
+
+.button {
+    font: normal 35px "Press Start 2P", system-ui;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border: 6px solid;
+    padding: 10px;
+    background-color: rgb(233,233,233);
+    transition: border-color 0.3s, color 0.3s;
+    z-index: 2;
+}
+
+#red{
+    border-color: red;
+    color: red;
+    -webkit-text-stroke: 2px rgb(170, 0, 0);
+    left: 42px;
+}
+
+#cyan, .box .button, #tovar .button{
+    border-color: cyan;
+    color: cyan;
+    -webkit-text-stroke: 2px rgb(5, 187, 187);
+}
+
+#cyan{
+    left: 414px;
+}
+
+.box .button {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    z-index: 3;
+}
+
+#yellow{
+    border-color: yellow;
+    color: yellow;
+    -webkit-text-stroke: 2px rgb(175, 175, 5);
+    left: 786px;
+}
+
+#blue{
+    border-color: blue;
+    color: blue;
+    -webkit-text-stroke: 2px rgb(0, 0, 175);
+    left: 1158px;
+}
+
+#purple{
+    border-color: purple;
+    color: purple;
+    -webkit-text-stroke: 2px rgb(87, 1, 87);
+    left: 1530px;
+}
+
+
+.button:hover, #red:hover, #cyan:hover, #yellow:hover, #blue:hover, #purple:hover,#tovar .button:hover {
+    border-color: rgb(126, 42, 115);
+    color: rgb(126, 42, 115);
+    justify-content: center;
+    user-select: none;
+    -webkit-text-stroke: 2px rgb(126, 42, 115);
+}
+
+.button:active, #red:active, #cyan:active, #yellow:active, #blue:active, #purple:active, #tovar .button:active {
+    border-color: rgb(158, 99, 150);
+    color: rgb(158, 99, 150);
+    justify-content: center;
+    user-select: none;
+    -webkit-text-stroke: 2px rgb(158, 99, 150);
+}
+
+.heart {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.button:hover .heart {
+    display: none;
+}
+
+.text {
+    display: flex;
+    font-family: "Press Start 2P", system-ui;
+    color: black;
+    position: absolute;
+    user-select: none;
+}
+
+.box .text {
+    color: red;
+    font-size: 25px;
+    justify-content: end;
+    left: 250px;
+    top: 35px;
+    rotate: 5deg;
+    width: 350px;
+}
+
+.box {
+    background-color: rgb(211, 211, 211);
+    z-index: 2;
+    margin-top: 135px;
+    margin-left: 275px;
+    border: 5px solid red;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+    /* Позволяет использовать абсолютное позиционирование для дочерних элементов */
+
+#Plush_flower {
+    width: 100%; /* Ширина элемента */
+    height: 100%; /* Задайте высоту для видимости фона */
+    background-image: url('../image/Plush_flower.png'); /* Убедитесь, что путь правильный */
+    background-size: 275px; /* Масштабирует изображение по размеру элемента */
+    top: 20px;
+    right: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+
+.textbox {
+    border: 6px solid black;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    position: absolute;
+}
+
+#textbox1 .textbox {
+    width: 700px;
+    height: 150px;
+    left: 950px;
+    bottom: 350px;
+}
+
+.textbox #Happy_Flowey {
+    background-image: url('../image/INHappy_Flowey.png');
+    width: 100%;
+    height: 100%;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    left: 15px;
+    bottom: -15px;
+    position: absolute;
+    z-index: 0;
+}
+
+#textbox1 .text {
+    left: 130px;
+    font-size: 18px;
+    width: 550px;
+}
+
+.text b, #text b {
+    display: flex;
+    position: absolute;
+    margin-left: -25px;
+}
+#new_stock{
+    height: 0px;
+    width: 1910px;
+}
+#new_stock .textbox {
+    width: 560px;
+    height: 150px;
+    left: 665px;
+    bottom: 240px;
+}
+
+#new_stock .text {
+    left: 130px;
+    font-size: 21px;
+    width: 430px;
+    background-color: rgb(255, 255, 255);
+}
+#tovar{
+    width: 1910px;
+}
+#tovar .button {
+    font-size: 25px;
+    z-index: 2;
+    width: 350px;
+    height: 75px;
+    margin-left: 1050px;
+    position: absolute;
+    text-align: center;
+    top: 1820px;
+}
+
+#boxforfigure {
+    position: absolute;
+    border: 5px solid black;
+    width: 850px;
+    height: 500px;
+    z-index: 2;
+    background-color: rgb(216, 216, 216);
+    top: 1295px;
+    left: 500px;
+}
+
+.circle {
+    border: 4px solid black;
+    background-color: rgb(211,211,211);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    /* Прозрачная левая сторона */
+    border-right: 10px solid transparent;
+    /* Прозрачная правая сторона */
+    z-index: 3;
+}
+
+.arrow-right {
+    border-bottom: 20px solid black;
+    rotate: 90deg;
+    position: absolute;
+    left: 20px;
+}
+
+.arrow-left {
+    border-top: 20px solid black;
+    rotate: 90deg;
+    position: absolute;
+    left: 14px;
+}
+
+.strelka1 {
+    margin-left: 1272px;
+    top: 1517px;
+    z-index: 5;
+}
+
+.strelka2 {
+    margin-left: 510px;
+    top: 1516px;
+    z-index: 5;
+}
+.stralka2:hover , .strelka1:hover {
+    border-color: rgb(126, 42, 115);
+    color: rgb(126, 42, 115);
+}
+
+.stralka2:active , .strelka1:active {
+    border-color: rgb(158, 99, 150);
+    color: rgb(158, 99, 150);
+}
+.circle:hover {
+    border-color: rgb(126, 42, 115);
+    color: rgb(126, 42, 115);
+    justify-content: center;
+    user-select: none;
+    -webkit-text-stroke: 2px rgb(126, 42, 115);
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    border-color: rgb(126, 42, 115);
+    color: rgb(126, 42, 115);
+    justify-content: center;
+    user-select: none;
+    -webkit-text-stroke: 2px rgb(126, 42, 115);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.circle:active {
+    border-color: rgb(158, 99, 150);
+    color: rgb(158, 99, 150);
+    justify-content: center;
+    user-select: none;
+}
+
+.arrow-left:active, .arrow-right:active {
+    border-color: rgb(158, 99, 150);
+    color: rgb(158, 99, 150);
+    justify-content: center;
+    user-select: none;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+#Metaton {
+    background-image: url('../image/Metaton.png');
+    width: 600px; /* Ширина элемента */
+    height: 500px; /* Задайте высоту для видимости фона */
+    background-size: 750px; /* Масштабирует изображение по размеру элемента */
+    left: 700px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    left: 50px;
+}
+
+#comeback {
+    position: absolute;
+    top: 2500px;
+    z-index: 2;
+    height: 640px;
+}
+
+#number, #email, .send {
+    background-color: rgb(206, 206, 206);
+    display: block;
+    height: 120px;
+    border: 5px solid black;
+    margin-left: 350px;
+    z-index: 2;
+    font: normal 25px "Press Start 2P", system-ui;
+    color: black;
+    position: absolute;
+}
+.send{
+    top: 300px;
+}
+
+#number{
+    top: 125px;
+}
+
+#email{
+    top: -50px;
+}
+
+
+#number, #email {
+    width: 500px;
+    padding: 15px;
+}
+
+#number f:hover, #email f:hover {
+    opacity: 30%;
+    user-select: none;
+}
+
+#number f:active, #email f:active {
+    display: none;
+}
+
+.send {
+    width: 530px;
+}
+
+#ready {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#number, #email{
+    font-size: 20px;
+}
+
+#appeal {
+    background-color: rgb(206, 206, 206);
+    bottom: 210px;
+    display: flex;
+    width: 650px;
+    height: 440px;
+    border: 5px solid black;
+    margin-left: 915px;
+    position: absolute;
+    padding: 15px;
+    z-index: 2;
+    font: normal 25px "Press Start 2P", system-ui;
+    color: black;
+}
+
+#appeal f:hover {
+    opacity: 30%;
+    user-select: none;
+}
+
+#appeal f:active {
+    display: none;
+}
+
+#ready:hover {
+    border-color: rgb(126, 42, 115);
+    color: rgb(126, 42, 115);
+    justify-content: center;
+    user-select: none;
+    -webkit-text-stroke: 2px rgb(126, 42, 115);
+}
+
+#ready:active {
+    border-color: rgb(158, 99, 150);
+    color: rgb(158, 99, 150);
+    justify-content: center;
+    user-select: none;
+    -webkit-text-stroke: 2px rgb(158, 99, 150);
+}
+
+footer {
+    width: 1920px;
+    right: 0px;
+    border: 5px solid rgb(32, 32, 32);
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    font: normal 25px "Press Start 2P", system-ui;
+    color: white;
+    top: 3030px;
+    z-index: 3;
+}
+#main:hover, #buscket:hover, #onas:hover, #products:hover {
+    border-color: rgb(126, 42, 115);
+    color: rgb(126, 42, 115);
+    justify-content: center;
+    user-select: none;
+}
+#main:active, #buscket:active, #onas:active, #products:active {
+    border-color: rgb(158, 99, 150);
+    color: rgb(158, 99, 150);
+    justify-content: center;
+    user-select: none;
+}
+#insta:active, #twitter:active, #facebook:active, #Vk:active {
+    display: none;
+}
+
+#textbox2 .textbox {
+    width: 700px;
+    height: 150px;
+    left: 610px;
+    top: 1940px;
+}
+#textbox2 .text {
+    left: 150px;
+    top: 10px;
+    font-size: 22px;
+    width: 550px;
+}
+
+.card {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+.textbox #Casual_Flowey {
+    background-image: url('../image/INCasual_Flowey.png');
+    width: 100%;
+    height: 100%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    left: 15px;
+    bottom: -5px;
+    position: absolute;
+    z-index: 0;
+}
+
+.textbox #Nervous_Flowey {
+    background-image: url('../image/INNervous_Flowey.png');
+    width: 100%;
+    height: 100%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    left: 15px;
+    bottom: -10px;
+    position: absolute;
+    z-index: 0;
+}
+
+.textbox #Iritated_Flowey {
+    background-image: url('../image/INIritated_Flowey.png');
+    width: 100%;
+    height: 100%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    left: 15px;
+    bottom: -5px;
+    position: absolute;
+    z-index: 0;
+}
+
+.textbox #Funny_Bones {
+    background-image: url('../image/INFunny_Bones.png');
+    width: 100%;
+    height: 100%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    left: 15px;
+    bottom: -5px;
+    position: absolute;
+    z-index: 0;
+}
+.textbox #Cool_Flowey {
+    background-image: url('../image/INCool_Flowey.png');
+    width: 100%;
+    height: 100%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    left: 15px;
+    bottom: -15px;
+    position: absolute;
+    z-index: 0;
+}
+
+#Temmi {
+    background-image: url('../image/Temmi.png');
+    width: 600px; /* Ширина элемента */
+    height: 500px; /* Задайте высоту для видимости фона */
+    background-size: 750px; /* Масштабирует изображение по размеру элемента */
+    left: 700px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    left: 50px;
+}
+
+#Lizard {
+    background-image: url('../image/Lizard.png');
+    width: 600px; /* Ширина элемента */
+    height: 500px; /* Задайте высоту для видимости фона */
+    background-size: 750px; /* Масштабирует изображение по размеру элемента */
+    left: 700px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    left: 50px;
+}
+
+#Fish {
+    background-image: url('../image/Fish.png');
+    width: 600px; /* Ширина элемента */
+    height: 500px; /* Задайте высоту для видимости фона */
+    background-size: 750px; /* Масштабирует изображение по размеру элемента */
+    left: 700px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    left: 50px;
+}
+
+
+#Flowey {
+    background-image: url('../image/DONTTURNMEINTOY.png');
+    width: 600px; /* Ширина элемента */
+    height: 500px; /* Задайте высоту для видимости фона */
+    background-size: 750px; /* Масштабирует изображение по размеру элемента */
+    left: 700px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    left: 50px;
+}
